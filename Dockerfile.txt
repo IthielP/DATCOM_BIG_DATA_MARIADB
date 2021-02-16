@@ -1,0 +1,12 @@
+FROM mariadb:latest
+MAINTAINER x79072438
+
+ENV MYSQL_ROOT_PASSWORD mypass
+ENV MYSQL_USER alumno
+ENV MYSQL_PASSWORD mypass
+
+RUN apt-get update
+
+EXPOSE 3306
+
+CMD ["mysqld"]
